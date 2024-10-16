@@ -1,0 +1,113 @@
+/* Styling for body and container */
+body {
+  background: linear-gradient(270deg, #001f3f, #000000, #333333, #0056b3);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  margin: 0;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.container {
+  padding-top: 20px;
+}
+
+h1 {
+  color: #ffffff;
+  font-weight: bold;
+}
+h3 {
+  color: #ffffff;
+  font-weight: bold;
+}
+/* Styling for the API form */
+form {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling */
+.btn-primary {
+  background-color: #001f3f;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* API response container */
+#apiTableContainer {
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+/* Table styling */
+.table-bordered {
+  margin-top: 15px;
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+.table-bordered th,
+.table-bordered td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered th {
+  background-color: #001f3f;
+  color: #ffffff;
+}
+
+.table-bordered td {
+  background-color: #f1f3f5;
+}
+
+/* Responsive table */
+@media (max-width: 767px) {
+  .table-bordered th,
+  .table-bordered td {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/* Error and success message styles */
+#error-message,
+#success-message {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+#success-message {
+  background-color: #d4edda;
+  color: #155724;
+}
